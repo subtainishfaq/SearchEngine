@@ -54,7 +54,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Bing" id="30G-qQ-Hov"/>
+                    <tabBarItem key="tabBarItem" title="Bing" image="bing" id="30G-qQ-Hov"/>
                     <connections>
                         <outlet property="GoogleHolder" destination="NO6-IK-p5i" id="p6v-ia-bhV"/>
                     </connections>
@@ -84,7 +84,7 @@
         <!--Settings-->
         <scene sceneID="NiJ-T3-qLh">
             <objects>
-                <viewController id="4BD-kH-JQ9" sceneMemberID="viewController">
+                <viewController id="4BD-kH-JQ9" customClass="SettingsController" customModule="SearchEngine" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Uu4-cn-qMk"/>
                         <viewControllerLayoutGuide type="bottom" id="KCj-7R-itt"/>
@@ -93,24 +93,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j3m-32-DEz">
-                                <frame key="frameInset" minX="156" minY="193" width="63" height="45"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6sT-bk-w3Y">
+                                <frame key="frameInset" minX="128" minY="304" width="112" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Share">
-                                            <attributes>
-                                                <font key="NSFont" size="18" name="Baskerville"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6sT-bk-w3Y">
-                                <frame key="frameInset" minX="145" minY="297" width="85" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal">
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="bookmark">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Rate">
                                             <attributes>
@@ -120,11 +108,33 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="RateApp:" destination="4BD-kH-JQ9" eventType="touchUpInside" id="VaL-0w-j0x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j3m-32-DEz">
+                                <frame key="frameInset" minX="128" minY="189" width="112" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <size key="titleShadowOffset" width="3" height="0.0"/>
+                                <state key="normal" image="share">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Share">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="Baskerville"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="ShareApp:" destination="4BD-kH-JQ9" eventType="touchUpInside" id="0RG-7L-ODl"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" id="5iB-y3-p4J"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="settings" id="5iB-y3-p4J"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DyV-D9-Qs5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -173,7 +183,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Google" id="UP8-vO-TID"/>
+                    <tabBarItem key="tabBarItem" title="Google" image="google" id="UP8-vO-TID"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="GoogleHolder" destination="2KG-1r-Px7" id="Tsx-bz-Szh"/>
@@ -184,4 +194,11 @@
             <point key="canvasLocation" x="-433" y="445"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bing" width="32" height="32"/>
+        <image name="bookmark" width="32" height="32"/>
+        <image name="google" width="32" height="32"/>
+        <image name="settings" width="32" height="32"/>
+        <image name="share" width="48" height="48"/>
+    </resources>
 </document>

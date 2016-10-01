@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E99DCCB31D9FDB62007963D0 /* BingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99DCCB21D9FDB62007963D0 /* BingController.swift */; };
+		E99DCCB51D9FDE03007963D0 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99DCCB41D9FDE03007963D0 /* SettingsController.swift */; };
 		E9EBDFC71D9485AE00BB6365 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EBDFC61D9485AE00BB6365 /* AppDelegate.swift */; };
 		E9EBDFC91D9485AE00BB6365 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EBDFC81D9485AE00BB6365 /* ViewController.swift */; };
 		E9EBDFCC1D9485AE00BB6365 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9EBDFCA1D9485AE00BB6365 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		E99DCCB21D9FDB62007963D0 /* BingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BingController.swift; sourceTree = "<group>"; };
+		E99DCCB41D9FDE03007963D0 /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		E9EBDFC31D9485AE00BB6365 /* SearchEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9EBDFC61D9485AE00BB6365 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9EBDFC81D9485AE00BB6365 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				E9EBDFCF1D9485AE00BB6365 /* LaunchScreen.storyboard */,
 				E9EBDFD21D9485AE00BB6365 /* Info.plist */,
 				E99DCCB21D9FDB62007963D0 /* BingController.swift */,
+				E99DCCB41D9FDE03007963D0 /* SettingsController.swift */,
 			);
 			path = SearchEngine;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E99DCCB51D9FDE03007963D0 /* SettingsController.swift in Sources */,
 				E99DCCB31D9FDB62007963D0 /* BingController.swift in Sources */,
 				E9EBDFC91D9485AE00BB6365 /* ViewController.swift in Sources */,
 				E9EBDFC71D9485AE00BB6365 /* AppDelegate.swift in Sources */,
